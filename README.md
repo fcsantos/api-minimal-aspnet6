@@ -1,0 +1,1 @@
+# api-minimal-aspnet6
