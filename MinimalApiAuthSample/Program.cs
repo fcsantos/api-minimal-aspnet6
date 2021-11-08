@@ -56,7 +56,7 @@ app.MapPost("/login", (User model) =>
     });
 });
 
-app.MapGet("/anonymous", () => { Results.Ok("anonymous"); }).AllowAnonymous();
+app.MapGet("/anonymous", () => { return Results.Ok("anonymous"); }).AllowAnonymous();
 
 app.MapGet("/authenticated", (ClaimsPrincipal user) =>
 {
